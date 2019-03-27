@@ -1,11 +1,13 @@
 package Factory;
 
-public class run {
-	
+public class Run {
 	public static void main (String [] args)
 	{
-		Rectangle square = ShapeFactory.getShape("square");
 		Shape rectangle = ShapeFactory.getShape("rectangle");
+		rectangle.draw();
+		
+		Shape square = ShapeFactory.getShape("square");
+		square.draw();
 		
 	}
 }

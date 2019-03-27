@@ -1,20 +1,27 @@
 package Factory;
 
 public class ShapeFactory {
-
+	
 	/**
-	 * private constructor to prevent instantiation of the class
+	 * can't instantiate
 	 */
-	private ShapeFactory() {
-
+	private ShapeFactory()
+	{
+		
 	}
-
+	
 	static Shape getShape(String shape) {
-		if (shape.equals("rectangle")) {
+		if (shape.equals("rectangle"))
+		{
 			return new Rectangle();
-		} else if (shape.equals("square")) {
+		}
+		else if (shape.equals("square"))
+		{
 			return new Square();
 		}
 		return null;
 	}
+	
 }
+
+
