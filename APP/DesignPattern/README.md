@@ -38,3 +38,11 @@
   - used for creating complex UI
 - behavioural pattern
   - help you define communication between objects in your systems and how the flow is controlled in complex program
+  
+  
+<h4> programming to an interface </h4>
+
+- focus your design on what the code is doing, but not how it does it
+- if you write code based on how it accomplishes the task, then it's going to be harder for you to adopt changes in the future because
+you are programming to a specific implementation. Namely, if you have to write program such that implementation can change depending on
+requirement change.
