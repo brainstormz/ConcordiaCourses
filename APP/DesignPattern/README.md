@@ -45,4 +45,33 @@
 - focus your design on what the code is doing, but not how it does it
 - if you write code based on how it accomplishes the task, then it's going to be harder for you to adopt changes in the future because
 you are programming to a specific implementation. Namely, if you have to write program such that implementation can change depending on
-requirement change.
+requirement change.  
+   
+
+<h1> Techlead vid </h1>
+
+- have one way data flow
+  - if there is a problem in the code, you know it's going to be in business logic like controller
+  - if there is UI error you know it's in the view
+- limit objects in the program (so just have data objects, controlller and view)
+
+<h3> single responsibility principal </h3>
+
+- if you can't explain what a single responsbility of a class does, then it's to break it down
+- singleton doesn't have a lot of dependencies (each team may create one singleton which may not affect others)
+  - problem: easily introduce 2 way data flow - (singleton A talking with singleton B) - hard to tell what the programm is doing. 
+  So, you have to start thinking about communication patterns (may be it can issue a notification and other singleton can listen to it;
+  this will stop 2 way data flow). 
+    - this is known is publish subscribe (encourages 1 way data flow)
+    - another is known as delegate pattern (IOS), where object can give call back to another object explaining what it's doing
+    - last one, chain of responsibility pattern (seen in hierarchical tree structure). Child will issue an event and parent will
+    try to handle, if not then great parents.
+      - event bubbling may be anti pattern? because it's a 2 way data flow? 
+- OOP is pushed in school, inheritance especially? but, in reality, inheritance is poor design structure. If you don't do it right
+you have subclass communicating to super then super super(). Namely, there is a communication between different levels of inheritance, and over time inheritance structure becomes deeply tied where it will be hard to refactor. 
+  - maybe break subclass if you try to refactor superclass?
+- so think about composition pattern (without getting into intertangled structure)
+- LAZY initialization = great to improve performance time
+- other important are adaptor (protocall or wrapper), factory builder (create heterogenous different component)
+- other design pattern are mixins, plugins (but these get more advanced, so keep it simple!)
+ 
