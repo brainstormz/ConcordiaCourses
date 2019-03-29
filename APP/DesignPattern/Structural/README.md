@@ -52,4 +52,10 @@
   - ```adapter has a instance of adaptee class ```
   - adapter class maps the client interface to the adaptee interface
   - client uses new interface
+- Object adapter uses composition to adapt the Adaptee
+- Class adapter subclasses the Adaptee and the Target classes
 
+<h5> Decorator </h5>
+
+- Motivation:
+  - 
