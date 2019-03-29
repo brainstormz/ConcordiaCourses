@@ -40,6 +40,7 @@
   - adaptor is an interface that bridges client and adaptee
   
 <h5> Adapter from Source making (https://sourcemaking.com/design_patterns/adapter) </h5>
+
 - about making intermediatry abstraction that translates old component to new system
 - client uses adaptor object, which redirect them into calls to the legacy component. 
 - can be used with inheritance or aggregation
