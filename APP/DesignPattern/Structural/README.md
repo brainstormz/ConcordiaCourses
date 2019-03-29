@@ -17,3 +17,24 @@
   - benefits?
 - flyweight - sharing objects, where each object stores its state externally
   - benefits?
+
+<h5> Adapter </h5>
+
+- Motivation
+  - bridge between 2 objects that have same functionality, but used in different manner (Eg: different specification
+  to their interface)
+  - Eg: an object expecting some type of object, and another object exposing same type of feature, but exposing it
+  in different way (API)
+  - you don't want to change the classes? 
+- Intent
+  - convert the interface of a class to another that the client expects
+  - adapter lets classes work together that have different interfaces
+- key roles:
+  - Target - Interface that client uses
+  - Adapter - adapts the adaptee to the target
+  - Adaptee - defines existing interface that needs adapting
+  - Client - collaborates with objects conforming to the target interface
+- when is adapter pattern used?
+  - adaptee and target uses the same service, but doesn't implement the same interface. This is the role of adapter
+  - non of the existing code is changed 
+  - adaptor is an interface that bridges client and adaptee
