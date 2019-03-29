@@ -53,19 +53,11 @@
   - adapter class maps the client interface to the adaptee interface
   - client uses new interface
 - Object adapter uses composition to adapt the Adaptee
-
-```  client --> target      adaptee
-                ------      --------
-                   
-                   
-                      adaptor
-                
-
-
-```
+![image](https://user-images.githubusercontent.com/26092570/55203912-8c7c8280-51a3-11e9-9024-cdbbaf602323.png)
 
 - Class adapter subclasses the Adaptee and the Target classes
-![alt text](http://url/to/img.png)
+![image](https://user-images.githubusercontent.com/26092570/55203882-7242a480-51a3-11e9-8005-48273b13ea99.png)
+
 
 <h5> Decorator </h5>
 
