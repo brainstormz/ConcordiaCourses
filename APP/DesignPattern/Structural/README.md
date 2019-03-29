@@ -38,3 +38,16 @@
   - adaptee and target uses the same service, but doesn't implement the same interface. This is the role of adapter
   - non of the existing code is changed 
   - adaptor is an interface that bridges client and adaptee
+  
+<h5> Adapter from Source making (https://sourcemaking.com/design_patterns/adapter) </h5>
+- about making intermediatry abstraction that translates old component to new system
+- client uses adaptor object, which redirect them into calls to the legacy component. 
+- can be used with inheritance or aggregation
+- Check list
+  - identify clients and adaptee 
+  - identify interface that client require
+  - design wrapper class that match adaptee to client
+  - adapter has a instance of adaptee class 
+  - adapter class maps the client interface to the adaptee interface
+  - client uses new interface
+
