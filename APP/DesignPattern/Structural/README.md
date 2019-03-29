@@ -33,7 +33,7 @@
   - Target - Interface that client uses
   - Adapter - adapts the adaptee to the target
   - Adaptee - defines existing interface that needs adapting (the interface client wants to use, but doesn know how)
-    - if client only knows how to use A, but want to use B as well. Then B is an adaptee
+    - ```if client only knows how to use A, but want to use B as well. Then B is an adaptee```
   - Client - collaborates with objects conforming to the target interface
 - when is adapter pattern used?
   - adaptee and target uses the same service, but doesn't implement the same interface. This is the role of adapter
@@ -49,7 +49,7 @@
   - identify clients and adaptee 
   - identify interface that client require
   - design wrapper class that match adaptee to client
-  - adapter has a instance of adaptee class 
+  - ```adapter has a instance of adaptee class ```
   - adapter class maps the client interface to the adaptee interface
   - client uses new interface
 
