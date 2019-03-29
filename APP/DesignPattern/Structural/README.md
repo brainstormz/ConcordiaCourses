@@ -62,4 +62,16 @@
 <h5> Decorator </h5>
 
 - Motivation:
-  - 
+  - dynamically add data members or methods to an object at runtime
+- intent:
+  - add new functionality to the existing object without altering its sturcture
+  - decorator class wraps the existing object
+  - additional functionality while keeping class method signatures intact
+  - inheritance is not feasible because it's done at run time, and inheritance is static and applies to the
+  entire class
+- Key Roles
+  - Component - Abstract representing object to be decorated 
+  - Concrete Component - many subclass that can be decorated
+  - Decorator - Abstract class that wraps a component and will have some of its subclass to decorate it
+  - Concrete Decorator - Differnt decorators that add different members to component.
+  
