@@ -83,4 +83,6 @@
     - implements the same interface/abstract class as the component the are decorating
     - change in behaviour is before or after the existing methods in the component you are decorating
     - we use inheritance to get type matching, but not to get same behaviour
+- Difference between object and class adaptor
+  - instead of having an adaptee object inside adapter (composition) to make use of its functionality adapter inherits the adaptee.
   
