@@ -8,6 +8,7 @@
 - Make these algorithms interchangeable at run time within that family
 
 <h5> Key Elements </h5>
+
 - Context class
   - Class that has a strategy
   - uses that certain strategy
