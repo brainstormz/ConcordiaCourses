@@ -74,4 +74,12 @@
   - Concrete Component - many subclass that can be decorated
   - Decorator - Abstract class that wraps a component and will have some of its subclass to decorate it
   - Concrete Decorator - Differnt decorators that add different members to component.
+- Key points:
+  - Decorator have the same supertype as the object it is decorating
+    - given that they have the same supertype we can pass around decorated object instead of original object
+    - decorator adds its own behaviour before or after the delegating to the object it is decorating
+  - flexible way of subclassing to give additional functionality
+    - each decorator has an instance variable that reference the component it is decorating
+    - implements the same interface/abstract class as the component the are decorating
+    - change in behaviour is before or after the existing methods in the component you are decorating
   
