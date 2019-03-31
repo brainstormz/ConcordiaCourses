@@ -36,7 +36,14 @@ It also places the task of traversal on the iterator object, not on the aggregat
     - in iterator we hide the internal implementation by separate iterator object, and hid the internal representation of the collection
     - builder is similar in that we encapsulate how complex object is built
 - Builder benefits
-    - Product implementations can be swapped in and out because the client only sees an abstract interface.
+    - Product implementations can be swapped in and out because the client only sees an abstract interface (increase modularity)
     - encapsulates way a complex object is built
     - hides internal representation of product from client
     - allows object to be created in multi steps (as opposed to factory)
+- Builder pattern should be used?
+    - Algorithm for creation is independent of parts that make up the object and how they are assembled
+    - construction have same process, but different representation of objects
+    - Complex objects have common structure, even though internal state and behaviour will be different.
+- Consequences of using builder pattern?
+    - let's you vary internal representation of the product and vary the the order of assembly (construction abstraction)
+    - 
