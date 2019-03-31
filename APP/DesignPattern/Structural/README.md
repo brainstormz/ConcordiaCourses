@@ -82,4 +82,5 @@
     - each decorator has an instance variable that reference the component it is decorating
     - implements the same interface/abstract class as the component the are decorating
     - change in behaviour is before or after the existing methods in the component you are decorating
+    - we use inheritance to get type matching, but not to get same behaviour
   
